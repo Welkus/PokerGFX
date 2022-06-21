@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
@@ -12,6 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -73,48 +76,85 @@
                </children></VBox>
          </children>
       </HBox>
-      <Button fx:id="check" layoutX="676.0" layoutY="736.0" mnemonicParsing="false" onAction="#check" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="Czekam" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect></Button>
-      <Button fx:id="fold" layoutX="679.0" layoutY="790.0" mnemonicParsing="false" onAction="#fold" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #ffff00; -fx-background-radius: 20;" text="Pas" textFill="#0a0505">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect></Button>
-      <Button fx:id="raise" layoutX="838.0" layoutY="676.0" mnemonicParsing="false" onAction="#raise" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Podbij" textFill="#0a0505">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect></Button>
+      <HBox layoutX="324.0" layoutY="675.0" prefHeight="40.0" prefWidth="638.0">
+         <children>
+            <Button fx:id="call" mnemonicParsing="false" onAction="#call" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: Green; -fx-background-radius: 20;" text="Sprawdzam" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="check" mnemonicParsing="false" onAction="#check" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="Czekam" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="fold" mnemonicParsing="false" onAction="#fold" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #ffff00; -fx-background-radius: 20;" text="Pas" textFill="#0a0505">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="raise" mnemonicParsing="false" onAction="#raise" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Podbij" textFill="#0a0505">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
       <HBox layoutX="526.0" layoutY="493.0" prefHeight="78.0" prefWidth="134.0">
          <children>
             <VBox fx:id="v6" prefHeight="200.0" prefWidth="100.0">
@@ -133,7 +173,7 @@
                </children></VBox>
          </children>
       </HBox>
-      <TextField fx:id="raisebox" layoutX="970.0" layoutY="675.0" prefHeight="37.0" prefWidth="137.0" style="-fx-background-color: #ffffff;">
+      <TextField fx:id="raisebox" layoutX="956.0" layoutY="680.0" prefHeight="37.0" prefWidth="137.0" style="-fx-background-color: #ffffff;">
          <font>
             <Font name="Universal Math 1 BT" size="19.0" />
          </font></TextField>
@@ -177,10 +217,13 @@
             <Image url="@download.jpg" />
          </image>
       </ImageView>
-      <Text fx:id="chipID" layoutX="549.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POT">
+      <Text fx:id="chipID" fill="#837215" layoutX="543.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PULA">
          <font>
             <Font name="Elephant" size="22.0" />
          </font>
+         <effect>
+            <DropShadow height="0.48" offsetX="1.0" offsetY="1.0" radius="0.0" spread="0.51" width="0.0" />
+         </effect>
       </Text>
       <Button layoutX="1062.0" layoutY="784.0" mnemonicParsing="false" onAction="#logout" prefHeight="52.0" prefWidth="157.0" style="-fx-background-color: #adff2f; -fx-background-radius: 30;" text="Koniec" textFill="#0a0505">
          <font>
@@ -197,41 +240,43 @@
             </Lighting>
          </effect>
       </Button>
-      <Text fx:id="pot" layoutX="625.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000" wrappingWidth="107.0">
+      <Text fx:id="pot" fill="#837215" layoutX="614.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000" wrappingWidth="116.0">
          <font>
             <Font name="DAGGERSQUARE" size="24.0" />
          </font>
+         <effect>
+            <DropShadow height="0.0" offsetX="1.0" offsetY="1.0" radius="0.0" width="0.0" />
+         </effect>
       </Text>
-      <Button fx:id="call" layoutX="676.0" layoutY="679.0" mnemonicParsing="false" onAction="#call" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: Green; -fx-background-radius: 20;" text="Sprawdzam" textFill="WHITE">
+      <Text fill="#837215" layoutX="532.0" layoutY="215.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="ZAKŁAD">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font size="20.0" />
          </font>
          <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect></Button>
-      <Text layoutX="546.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" BET: ">
+            <DropShadow height="0.0" offsetX="1.0" offsetY="1.0" radius="0.0" width="0.0" />
+         </effect>
+      </Text>
+      <Text fx:id="bet" fill="#837215" layoutX="614.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="116.0">
          <font>
             <Font name="DAGGERSQUARE" size="20.0" />
          </font>
+         <effect>
+            <DropShadow height="0.0" offsetX="1.0" offsetY="1.0" radius="0.0" width="0.0" />
+         </effect>
       </Text>
-      <Text fx:id="bet" layoutX="602.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="124.0">
+      <Text fx:id="message" fill="#723300" layoutX="36.0" layoutY="747.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oczekiwanie na grazcza..." wrappingWidth="252.6708984375">
          <font>
-            <Font name="DAGGERSQUARE" size="20.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
+         <effect>
+            <DropShadow height="26.86" radius="10.7325" spread="0.69" width="18.07">
+               <color>
+                  <Color red="0.9210526347160339" green="0.9022904634475708" blue="0.35818713903427124" />
+               </color>
+            </DropShadow>
+         </effect>
       </Text>
-      <Text fx:id="message" fill="#ffbcbc" layoutX="74.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.6708984375">
-         <font>
-            <Font name="Arial Bold" size="26.0" />
-         </font>
-      </Text>
-      <Label layoutX="968.0" layoutY="643.0" text="Wartość" textFill="#67b9da">
+      <Label layoutX="954.0" layoutY="648.0" text="Wartość" textFill="#67b9da">
          <font>
             <Font name="Lucida Fax Demibold" size="19.0" />
          </font>
@@ -248,72 +293,30 @@
       <Circle fx:id="pot4" fill="#1d9a38" layoutX="688.0" layoutY="291.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot5" fill="#1d9a38" layoutX="656.0" layoutY="308.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot6" fill="#1d9a38" layoutX="593.0" layoutY="308.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="avatar2" fill="#798a9a" layoutX="137.0" layoutY="324.0" radius="62.0" stroke="#9e8f8d" strokeType="INSIDE">
+      <Circle fx:id="avatar2" fill="#798a9a" layoutX="1157.0" layoutY="270.0" radius="62.0" stroke="#9e8f8d" strokeType="INSIDE">
          <effect>
             <DropShadow />
          </effect></Circle>
-      <TextField fx:id="p2" alignment="CENTER" layoutX="92.0" layoutY="383.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: white;" text="Brak">
+      <TextField fx:id="p2" alignment="CENTER" layoutX="1111.0" layoutY="350.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: white;" text="Brak">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </TextField>
-      <TextField fx:id="c2" alignment="CENTER" layoutX="93.0" layoutY="425.0" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #eeeeee;" text="-">
+      <TextField fx:id="c2" alignment="CENTER" layoutX="1113.0" layoutY="390.0" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #eeeeee;" text="-">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </TextField>
-      <Circle fx:id="avatar1" fill="#798a9a" layoutX="415.0" layoutY="686.0" radius="62.0" stroke="#9e8f8d" strokeType="INSIDE">
+      <Circle fx:id="avatar1" fill="#798a9a" layoutX="100.0" layoutY="270.0" radius="62.0" stroke="#9e8f8d" strokeType="INSIDE">
          <effect>
             <DropShadow />
          </effect></Circle>
-      <TextField fx:id="p1" alignment="CENTER" layoutX="486.0" layoutY="656.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: white;" text="Brak">
+      <TextField fx:id="p1" alignment="CENTER" layoutX="55.0" layoutY="350.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: white;" text="Brak">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </TextField>
-      <TextField fx:id="c1" alignment="CENTER" layoutX="488.0" layoutY="698.0" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #eeeeee;" text="-">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <Circle fx:id="avatar3" fill="#798a9a" layoutX="276.0" layoutY="134.0" radius="53.0" stroke="#9e8f8d" strokeType="INSIDE">
-         <effect>
-            <DropShadow />
-         </effect></Circle>
-      <TextField fx:id="p3" alignment="CENTER" layoutX="329.0" layoutY="77.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: white;" text="Brak">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="c5" alignment="CENTER" layoutX="1084.0" layoutY="425.0" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #eeeeee;" text="-">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="c4" alignment="CENTER" layoutX="987.0" layoutY="153.0" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #eeeeee;" text="-">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="c3" alignment="CENTER" layoutX="329.0" layoutY="115.0" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #eeeeee;" text="-">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <Circle fx:id="avatar5" fill="#798a9a" layoutX="1131.0" layoutY="331.0" radius="56.0" stroke="#9e8f8d" strokeType="INSIDE">
-         <effect>
-            <DropShadow />
-         </effect></Circle>
-      <Circle fx:id="avatar4" fill="#798a9a" layoutX="927.0" layoutY="119.0" radius="56.0" stroke="#9e8f8d" strokeType="INSIDE">
-         <effect>
-            <DropShadow />
-         </effect></Circle>
-      <TextField fx:id="p5" alignment="CENTER" layoutX="1079.0" layoutY="383.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: #ffffff;" text="Brak">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="p4" alignment="CENTER" layoutX="986.0" layoutY="113.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #b0a0a0; -fx-text-fill: #ffffff;" text="Brak">
+      <TextField fx:id="c1" alignment="CENTER" layoutX="57.0" layoutY="390.0" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #eeeeee;" text="-">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -326,10 +329,13 @@
             <DropShadow />
          </effect>
       </TextField>
-      <Text fx:id="action" fill="#fff985" layoutX="661.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
+      <Text fx:id="action" fill="#ffe39d" layoutX="661.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEST NAPISU" wrappingWidth="137.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
+         <effect>
+            <Glow level="0.86" />
+         </effect>
       </Text>
       <Text fx:id="action3" fill="WHITE" layoutX="329.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.0">
          <font>
