@@ -31,7 +31,7 @@ public class LoginController{
             Main.client.setSignUpController(sc);
 
             Main.stage.close();
-            Main.stage.setTitle("Online Poker - Sign Up");
+            Main.stage.setTitle("Online Poker - Zapisz");
             Main.stage.setScene(new Scene(root, 950, 520));
             Main.stage.show();
 
