@@ -1,8 +1,8 @@
 package client;
+
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
@@ -69,21 +69,21 @@ public class TableController{
 
           message.setText(" ");
 
-          if(Main.client.isTurn){
-              if(Main.client.currentbet - Main.client.selfBet<= Main.client.chips){
-                  if(Main.client.currentbet != Main.client.selfBet){
+          if(main.client.isTurn){
+              if(main.client.currentbet - main.client.selfBet<= main.client.chips){
+                  if(main.client.currentbet != main.client.selfBet){
 
-                      Main.client.out.println("call");
-                      Main.client.selfBet = Main.client.currentbet;
-                      Main.client.isTurn = false;
+                      main.client.out.println("call");
+                      main.client.selfBet = main.client.currentbet;
+                      main.client.isTurn = false;
                   }
                   else message.setText("Nie moższ teraz sprawdzić. Wybierz Podbij lub Rzucam.");
               }
               else {
                   message.setText("Musisz rzucić karty!"); // today
 
-                  Main.client.out.println("fold");
-                  Main.client.isTurn = false;
+                  main.client.out.println("fold");
+                  main.client.isTurn = false;
                 //  card1.setImage(new Image("resources/download.jpg"));
                  // card2.setImage(new Image("resources/download.jpg"));
               }
@@ -95,10 +95,10 @@ public class TableController{
 
         message.setText(" ");
 
-          if(Main.client.isTurn){
-              if(Main.client.currentbet == Main.client.selfBet){
-                  Main.client.out.println("check");
-                  Main.client.isTurn = false;
+          if(main.client.isTurn){
+              if(main.client.currentbet == main.client.selfBet){
+                  main.client.out.println("check");
+                  main.client.isTurn = false;
               }
               else message.setText("Musisz sprawdzić aktualny zakład!");
           }
@@ -110,16 +110,16 @@ public class TableController{
         message.setText(" ");
 
         try{
-            if (Main.client.isTurn) {
+            if (main.client.isTurn) {
 
-                if (Integer.parseInt(raisebox.getText()) - Main.client.selfBet <= Main.client.chips) {
+                if (Integer.parseInt(raisebox.getText()) - main.client.selfBet <= main.client.chips) {
 
-                    if(Integer.parseInt(raisebox.getText()) > Main.client.currentbet){
+                    if(Integer.parseInt(raisebox.getText()) > main.client.currentbet){
 
-                        Main.client.out.println("raise#" + raisebox.getText());
-                        Main.client.selfBet = Integer.parseInt(raisebox.getText());
+                        main.client.out.println("raise#" + raisebox.getText());
+                        main.client.selfBet = Integer.parseInt(raisebox.getText());
                         raisebox.clear();
-                        Main.client.isTurn = false;
+                        main.client.isTurn = false;
                     }
                     else message.setText("Nie możesz postawić mniej, niż aktualna wartość zakładu.");
                 }
@@ -136,9 +136,9 @@ public class TableController{
 
         message.setText(" ");
 
-        if(Main.client.isTurn){
-            Main.client.out.println("fold");
-            Main.client.isTurn = false;
+        if(main.client.isTurn){
+            main.client.out.println("fold");
+            main.client.isTurn = false;
 
            // card1.setImage(new Image("resources/download.jpg"));
            // card2.setImage(new Image("resources/download.jpg"));
@@ -147,8 +147,8 @@ public class TableController{
 
     public void logout(){
 
-        if(Main.client.canLogout){
-            Main.client.out.println("logout");
+        if(main.client.canLogout){
+            main.client.out.println("logout");
             Platform.exit();
             System.exit(0);
         }

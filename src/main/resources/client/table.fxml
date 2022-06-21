@@ -242,9 +242,6 @@
       <ImageView fx:id="p1chip" fitHeight="46.0" fitWidth="38.0" layoutX="260.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true" />
       <Circle fx:id="circle" fill="#1d9a38" layoutX="250.0" layoutY="466.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="circle2" fill="#1d9a38" layoutX="1025.0" layoutY="450.0" radius="16.0" stroke="#2b7c43" strokeType="INSIDE" visible="false" />
-      <Circle fx:id="circle3" fill="#1d9a38" layoutX="436.0" layoutY="259.0" radius="16.0" stroke="#23b21e" strokeType="INSIDE" visible="false" />
-      <Circle fx:id="circle4" fill="#1d9a38" layoutX="799.0" layoutY="243.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-      <Circle fx:id="circle5" fill="#1d9a38" layoutX="1007.0" layoutY="324.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
       <Circle fx:id="pot1" fill="#1d9a38" layoutX="598.0" layoutY="275.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot3" fill="#1d9a38" layoutX="624.0" layoutY="295.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot2" fill="#1d9a38" layoutX="656.0" layoutY="276.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
@@ -295,22 +292,7 @@
             <Glow level="0.86" />
          </effect>
       </Text>
-      <Text fx:id="action3" fill="WHITE" layoutX="329.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.0">
-         <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
-         </font>
-      </Text>
-      <Text fx:id="action2" fill="WHITE" layoutX="100.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="75.0">
-         <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
-         </font>
-      </Text>
-      <Text fx:id="action4" fill="WHITE" layoutX="961.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="124.0">
-         <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
-         </font>
-      </Text>
-      <Text fx:id="action5" fill="WHITE" layoutX="1069.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="124.0">
+      <Text fx:id="action2" fill="WHITE" layoutX="1120.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="75.0">
          <font>
             <Font name="Lucida Fax Demibold" size="19.0" />
          </font>

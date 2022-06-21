@@ -12,7 +12,7 @@ public class SignupController {
     public void signUp(){
         if (userName_sign.getText() != null && password_sign.getText() != null) {
 
-            Main.client.out.println("signup#"+userName_sign.getText()+"#"+password_sign.getText());
+            main.client.out.println("signup#"+userName_sign.getText()+"#"+password_sign.getText());
         }
     }
 

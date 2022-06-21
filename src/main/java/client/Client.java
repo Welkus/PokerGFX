@@ -334,10 +334,10 @@ public class Client{
             WaitController wc = loader.getController();
             setWaitController(wc);
 
-            Main.stage.close();
-            Main.stage.setTitle("POCZEKALNIA");
-            Main.stage.setScene(new Scene(root));
-            Main.stage.show();
+            main.stage.close();
+            main.stage.setTitle("POCZEKALNIA");
+            main.stage.setScene(new Scene(root));
+            main.stage.show();
         }
         catch (IOException e){
             e.printStackTrace();
@@ -354,10 +354,10 @@ public class Client{
             TableController tc = loader.getController();
             setTableController(tc);
 
-            Main.stage.close();
-            Main.stage.setTitle("STÓŁ");
-            Main.stage.setScene(new Scene(root));
-            Main.stage.show();
+            main.stage.close();
+            main.stage.setTitle("STÓŁ");
+            main.stage.setScene(new Scene(root));
+            main.stage.show();
 
             tc.p1.setText(username);
             tc.c1.setText(String.valueOf(chips));
