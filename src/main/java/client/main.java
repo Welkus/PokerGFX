@@ -11,8 +11,12 @@ public class main extends Application {
     public static Stage stage;
     public static Client client;
 
+    /**
+     * Klasa main - metoda start aplikacja okienkowa(javafx)
+     * @param primaryStage
+     */
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
 
         client = new Client();
 
@@ -28,6 +32,7 @@ public class main extends Application {
         stage.show();
 
     }
+
     public static void main(String[] args) {
         launch(args);
     }

@@ -8,12 +8,18 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
-
+/**
+ * Klasa LoginController okno logowania
+ * @author K.Woelke
+ */
 public class LoginController{
 
     @FXML private TextField userName_log;
     @FXML private PasswordField password_log;
 
+    /**
+     * Logowanie do aplikacji
+     */
     public void logIn() {
         if (userName_log.getText() != null && password_log.getText() != null) {
 
@@ -21,6 +27,10 @@ public class LoginController{
         }
     }
 
+    /**
+     * metoda pozawalająca na utworzenie konta użytkownika
+     * przygotowanie sceny dla formatki rejestracji gracza
+     */
     public void createAccount(){
 
         try {
@@ -39,8 +49,6 @@ public class LoginController{
             e.printStackTrace();
         }
     }
-
-
 }
 
 

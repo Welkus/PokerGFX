@@ -12,7 +12,16 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Klasa clienta
+ * Realizuje połączenie z serwerem gry
+ * @author K.Woelke
+ * @Param socket(ip,port)
+ * @Param in
+ * @Param out
+ * @Param username
+ * @Throw Execption
+ */
 public class Client{
 
     public Socket socket;
@@ -49,7 +58,10 @@ public class Client{
         new Thread(()->receive(),"client receive thread").start();
     }
 
-
+    /**
+     * metoda receive, odczyt danych z serwera
+     * @Throws Exeception
+     */
     private void receive() {
 
         while(true){
@@ -67,6 +79,10 @@ public class Client{
         }
     }
 
+    /**
+     * @param data
+     * metoda parsująca dane z serwera.
+     */
     private void parseData(String data){
 
         String [] message = data.split("#");
@@ -186,16 +202,13 @@ public class Client{
             case "cardReset":
                 tc.card1.setImage(new Image("download.jpg"));
                 tc.card2.setImage(new Image("download.jpg"));
-
+                tc.card21.setImage(new Image("download.jpg"));
+                tc.card22.setImage(new Image("download.jpg"));
                 tc.cc1.setImage(new Image("download.jpg"));
                 tc.cc2.setImage(new Image("download.jpg"));
                 tc.cc3.setImage(new Image("download.jpg"));
                 tc.cc4.setImage(new Image("download.jpg"));
                 tc.cc5.setImage(new Image("download.jpg"));
-
-                tc.card21.setImage(new Image("download.jpg"));
-                tc.card22.setImage(new Image("download.jpg"));
-
                 tc.action.setText(" ");
 
                 players = new ArrayList<>();
@@ -244,6 +257,11 @@ public class Client{
         }
     }
 
+    /**
+     * metoda wait - wykorzystana do uruchomienia
+     * poczekalni dla graczy czekających w kolejce
+     * Wyświetlona jest nowa scena zdefiniowana w wait.fxml
+     */
     private void openWait(){
 
         try {
@@ -264,6 +282,11 @@ public class Client{
         }
     }
 
+    /**
+     * metoda uruchamia głowną plaszę gry (Stół)
+     * wygląd zdefiniowano w pliku table.fxml
+     * @Throw Exception
+     */
     private void openTable(){
 
         try {
@@ -274,7 +297,7 @@ public class Client{
             setTableController(tc);
 
             main.stage.close();
-            main.stage.setTitle("STÓŁ");
+            main.stage.setTitle("Rozgrywka");
             main.stage.setScene(new Scene(root));
             main.stage.show();
 
@@ -296,18 +319,30 @@ public class Client{
         }
     }
 
+    /**
+     * @param lc
+     */
     public void setLogInController(LoginController lc) {
         this.lc = lc;
     }
 
+    /**
+     * @param sc
+     */
     public void setSignUpController(SignupController sc) {
         this.sc = sc;
     }
 
+    /**
+     * @param tc
+     */
     public void setTableController(TableController tc){
         this.tc = tc;
     }
 
+    /**
+     * @param wc
+     */
     public void setWaitController(WaitController wc){
         this.wc = wc;
     }
