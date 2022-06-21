@@ -99,27 +99,27 @@ public class Client{
                     tc.circle2.setFill(new ImagePattern(new Image("blackChip2.jpg")));
                     tc.avatar2.setFill(new ImagePattern(new Image("face3.jpg")));
                 }
-//                else if(players.size()==3){
-//                    tc.p3.setText(message[1]);
-//                    tc.c3.setText(String.valueOf(message[2]));
-//                    tc.circle3.setVisible(true);
-//                    tc.circle3.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar3.setFill(new ImagePattern(new Image("face5.png")));
-//                }
-//                else if(players.size()==4){
-//                    tc.p4.setText(message[1]);
-//                    tc.c4.setText(String.valueOf(message[2]));
-//                    tc.circle4.setVisible(true);
-//                    tc.circle4.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar4.setFill(new ImagePattern(new Image("face4.jpg")));
-//                }
-//                else if(players.size()==5){
-//                    tc.p5.setText(message[1]);
-//                    tc.c5.setText(String.valueOf(message[2]));
-//                    tc.circle5.setVisible(true);
-//                    tc.circle5.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar5.setFill(new ImagePattern(new Image("face6.png")));
-//                }
+                else if(players.size()==3){
+                    tc.p3.setText(message[1]);
+                    tc.c3.setText(String.valueOf(message[2]));
+                    tc.circle3.setVisible(true);
+                    tc.circle3.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+                    tc.avatar3.setFill(new ImagePattern(new Image("face5.png")));
+                }
+                else if(players.size()==4){
+                    tc.p4.setText(message[1]);
+                    tc.c4.setText(String.valueOf(message[2]));
+                    tc.circle4.setVisible(true);
+                    tc.circle4.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+                    tc.avatar4.setFill(new ImagePattern(new Image("face4.jpg")));
+                }
+                else if(players.size()==5){
+                    tc.p5.setText(message[1]);
+                    tc.c5.setText(String.valueOf(message[2]));
+                    tc.circle5.setVisible(true);
+                    tc.circle5.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+                    tc.avatar5.setFill(new ImagePattern(new Image("face6.png")));
+                }
                 break;
 
             case "card":
@@ -139,9 +139,9 @@ public class Client{
                         }
 
                         if(i==1) tc.c2.setText(message[2]);
-//                        if(i==2) tc.c3.setText(message[2]);
-//                        if(i==3) tc.c4.setText(message[2]);
-//                        if(i==4) tc.c5.setText(message[2]);
+                        if(i==2) tc.c3.setText(message[2]);
+                        if(i==3) tc.c4.setText(message[2]);
+                        if(i==4) tc.c5.setText(message[2]);
                     }
                 }
                 break;
@@ -162,15 +162,15 @@ public class Client{
             case "flop":
                 tc.cc1.setImage(new Image("" + message[1] + ".png"));
                 tc.cc2.setImage(new Image("" + message[2] + ".png"));
-//                tc.cc3.setImage(new Image("" + message[3] + ".png"));
+                tc.cc3.setImage(new Image("" + message[3] + ".png"));
                 break;
 
             case "turn":
-//                tc.cc4.setImage(new Image("" + message[1] + ".png"));
+                tc.cc4.setImage(new Image("" + message[1] + ".png"));
                 break;
 
             case "river":
-//                tc.cc5.setImage(new Image("" + message[1] + ".png"));
+                tc.cc5.setImage(new Image("" + message[1] + ".png"));
                 break;
 
             case "whichPturn":
@@ -197,21 +197,21 @@ public class Client{
                     tc.action2.setText(message[2]);
                     System.out.println(message[2] + " " + tc.p2.getText());
                 }
-//                else if(tc.p3.getText().equals(message[1]))
-//                {
-//                    tc.action3.setText(message[2]);
-//                    System.out.println(message[2] + " " + tc.p3.getText());
-//                }
-//                else if(tc.p4.getText().equals(message[1]))
-//                {
-//                    tc.action4.setText(message[2]);
-//                    System.out.println(message[2] + " " + tc.p4.getText());
-//                }
-//                else if(tc.p5.getText().equals(message[1]))
-//                {
-//                    tc.action5.setText(message[2]);
-//                    System.out.println(message[2] + " " + tc.p5.getText());
-//                }
+                else if(tc.p3.getText().equals(message[1]))
+                {
+                    tc.action3.setText(message[2]);
+                    System.out.println(message[2] + " " + tc.p3.getText());
+                }
+                else if(tc.p4.getText().equals(message[1]))
+                {
+                    tc.action4.setText(message[2]);
+                    System.out.println(message[2] + " " + tc.p4.getText());
+                }
+                else if(tc.p5.getText().equals(message[1]))
+                {
+                    tc.action5.setText(message[2]);
+                    System.out.println(message[2] + " " + tc.p5.getText());
+                }
 
                 if(message[2].equals("Fold")){
                     for(int i=0; i<players.size(); i++){
@@ -228,18 +228,18 @@ public class Client{
 
                 tc.cc1.setImage(new Image("download.jpg"));
                 tc.cc2.setImage(new Image("download.jpg"));
-//                tc.cc3.setImage(new Image("download.jpg"));
-//                tc.cc4.setImage(new Image("download.jpg"));
-//                tc.cc5.setImage(new Image("download.jpg"));
+                tc.cc3.setImage(new Image("download.jpg"));
+                tc.cc4.setImage(new Image("download.jpg"));
+                tc.cc5.setImage(new Image("download.jpg"));
 
                 tc.card21.setImage(new Image("download.jpg"));
                 tc.card22.setImage(new Image("download.jpg"));
-//                tc.card31.setImage(new Image("download.jpg"));
-//                tc.card32.setImage(new Image("download.jpg"));
-//                tc.card41.setImage(new Image("download.jpg"));
-//                tc.card42.setImage(new Image("download.jpg"));
-//                tc.card51.setImage(new Image("download.jpg"));
-//                tc.card52.setImage(new Image("download.jpg"));
+                tc.card31.setImage(new Image("download.jpg"));
+                tc.card32.setImage(new Image("download.jpg"));
+                tc.card41.setImage(new Image("download.jpg"));
+                tc.card42.setImage(new Image("download.jpg"));
+                tc.card51.setImage(new Image("download.jpg"));
+                tc.card52.setImage(new Image("download.jpg"));
                 tc.action.setText(" ");
 
                 players = new ArrayList<>();
@@ -255,27 +255,27 @@ public class Client{
                         tc.card21.setImage(new Image("" + message[2] + ".png"));
                         tc.card22.setImage(new Image("" + message[3] + ".png"));
                     }
-//                    else  if(tc.p3.getText().equals(message[1])){
-//                        tc.card31.setImage(new Image("" + message[2] + ".png"));
-//                        tc.card32.setImage(new Image("" + message[3] + ".png"));
-//                    }
-//                    else if(tc.p4.getText().equals(message[1])){
-//                        tc.card41.setImage(new Image("" + message[2] + ".png"));
-//                        tc.card42.setImage(new Image("" + message[3] + ".png"));
-//                    }
-//                    else if(tc.p5.getText().equals(message[1])){
-//                        tc.card51.setImage(new Image("" + message[2] + ".png"));
-//                        tc.card52.setImage(new Image("" + message[3] + ".png"));
-//                    }
+                    else  if(tc.p3.getText().equals(message[1])){
+                        tc.card31.setImage(new Image("" + message[2] + ".png"));
+                        tc.card32.setImage(new Image("" + message[3] + ".png"));
+                    }
+                    else if(tc.p4.getText().equals(message[1])){
+                        tc.card41.setImage(new Image("" + message[2] + ".png"));
+                        tc.card42.setImage(new Image("" + message[3] + ".png"));
+                    }
+                    else if(tc.p5.getText().equals(message[1])){
+                        tc.card51.setImage(new Image("" + message[2] + ".png"));
+                        tc.card52.setImage(new Image("" + message[3] + ".png"));
+                    }
 
                 }
                 break;
 
             case "removeaction":
                 tc.action2.setText(" ");
-//                tc.action3.setText(" ");
-//                tc.action4.setText(" ");
-//                tc.action5.setText(" ");
+                tc.action3.setText(" ");
+                tc.action4.setText(" ");
+                tc.action5.setText(" ");
                 break;
 
             case "logout":
@@ -292,27 +292,27 @@ public class Client{
                     tc.avatar2.setFill(null);
                     tc.action2.setText(" ");
                 }
-//                else if(tc.p3.getText().equals(message[1]))
-//                {
-//                    tc.p3.setText("Brak");
-//                    tc.c3.setText("-");
-//                    tc.avatar3.setFill(null);
-//                    tc.action3.setText(" ");
-//                }
-//                else if(tc.p4.getText().equals(message[1]))
-//                {
-//                    tc.p4.setText("Brak");
-//                    tc.c4.setText("-");
-//                    tc.avatar4.setFill(null);
-//                    tc.action4.setText(" ");
-//                }
-//                else if(tc.p5.getText().equals(message[1]))
-//                {
-//                    tc.p5.setText("Brak");
-//                    tc.c5.setText("-");
-//                    tc.avatar5.setFill(null);
-//                    tc.action5.setText(" ");
-//                }
+                else if(tc.p3.getText().equals(message[1]))
+                {
+                    tc.p3.setText("Brak");
+                    tc.c3.setText("-");
+                    tc.avatar3.setFill(null);
+                    tc.action3.setText(" ");
+                }
+                else if(tc.p4.getText().equals(message[1]))
+                {
+                    tc.p4.setText("Brak");
+                    tc.c4.setText("-");
+                    tc.avatar4.setFill(null);
+                    tc.action4.setText(" ");
+                }
+                else if(tc.p5.getText().equals(message[1]))
+                {
+                    tc.p5.setText("Brak");
+                    tc.c5.setText("-");
+                    tc.avatar5.setFill(null);
+                    tc.action5.setText(" ");
+                }
                 break;
 
             case "sleep":
@@ -365,10 +365,10 @@ public class Client{
             tc.circle.setFill(new ImagePattern(new Image("blackChip2.jpg")));
             tc.pot1.setFill(new ImagePattern(new Image("redChip.png")));
             tc.pot2.setFill(new ImagePattern(new Image("redChip.png")));
-//            tc.pot3.setFill(new ImagePattern(new Image("redChip.png")));
-//            tc.pot4.setFill(new ImagePattern(new Image("redChip.png")));
-//            tc.pot5.setFill(new ImagePattern(new Image("redChip.png")));
-//            tc.pot6.setFill(new ImagePattern(new Image("redChip.png")));
+            tc.pot3.setFill(new ImagePattern(new Image("redChip.png")));
+            tc.pot4.setFill(new ImagePattern(new Image("redChip.png")));
+            tc.pot5.setFill(new ImagePattern(new Image("redChip.png")));
+            tc.pot6.setFill(new ImagePattern(new Image("redChip.png")));
             tc.avatar1.setFill(new ImagePattern(new Image("face2.jpg")));
         }
         catch (IOException e){
