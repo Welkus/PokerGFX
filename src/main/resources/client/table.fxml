@@ -41,10 +41,17 @@
             <Image url="@Table.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="134.0" fitWidth="167.0" layoutX="594.0" layoutY="7.0" pickOnBounds="true">
+      <ImageView fitHeight="134.0" fitWidth="167.0" layoutX="537.0" layoutY="36.0" opacity="0.56" pickOnBounds="true">
          <image>
             <Image url="@spbubble.png" />
          </image>
+         <effect>
+            <DropShadow height="41.53" offsetX="5.0" offsetY="5.0" radius="22.46" spread="0.77" width="50.31">
+               <color>
+                  <Color opacity="0.7786259651184082" />
+               </color>
+            </DropShadow>
+         </effect>
       </ImageView>
       <HBox layoutX="396.0" layoutY="415.0" prefHeight="124.0" prefWidth="447.0">
          <children>
@@ -294,8 +301,8 @@
          </effect>
       </Label>
       <ImageView fx:id="p1chip" fitHeight="46.0" fitWidth="38.0" layoutX="155.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true" />
-      <Circle fx:id="circle" fill="#1d9a38" layoutX="262.0" layoutY="527.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="circle2" fill="#1d9a38" layoutX="989.0" layoutY="456.0" radius="16.0" stroke="#2b7c43" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle" fill="#1d9a38" layoutX="252.0" layoutY="505.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="#1d9a38" layoutX="981.0" layoutY="505.0" radius="16.0" stroke="#2b7c43" strokeType="INSIDE" visible="false" />
       <Circle fx:id="pot1" fill="#1d9a38" layoutX="598.0" layoutY="277.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot3" fill="#1d9a38" layoutX="624.0" layoutY="297.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="pot2" fill="#1d9a38" layoutX="656.0" layoutY="278.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
@@ -338,7 +345,7 @@
             <DropShadow />
          </effect>
       </TextField>
-      <Text fx:id="action" fill="#402c0fad" layoutX="609.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
+      <Text fx:id="action" fill="#402c0fad" layoutX="551.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
