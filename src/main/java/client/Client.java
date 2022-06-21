@@ -99,30 +99,30 @@ public class Client{
                     tc.circle2.setFill(new ImagePattern(new Image("blackChip2.jpg")));
                     tc.avatar2.setFill(new ImagePattern(new Image("face3.jpg")));
                 }
-                else if(players.size()==3){
-                    System.out.println("Gracz 3 nie istnieje");
-//                    tc.p3.setText(message[1]);
-//                    tc.c3.setText(String.valueOf(message[2]));
-//                    tc.circle3.setVisible(true);
-//                    tc.circle3.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar3.setFill(new ImagePattern(new Image("face5.png")));
-                }
-                else if(players.size()==4){
-                    System.out.println("Gracz 3 nie istnieje");
-//                    tc.p4.setText(message[1]);
-//                    tc.c4.setText(String.valueOf(message[2]));
-//                    tc.circle4.setVisible(true);
-//                    tc.circle4.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar4.setFill(new ImagePattern(new Image("face4.jpg")));
-                }
-                else if(players.size()==5){
-                    System.out.println("Gracz 3 nie istnieje");
-//                    tc.p5.setText(message[1]);
-//                    tc.c5.setText(String.valueOf(message[2]));
-//                    tc.circle5.setVisible(true);
-//                    tc.circle5.setFill(new ImagePattern(new Image("blackChip2.jpg")));
-//                    tc.avatar5.setFill(new ImagePattern(new Image("face6.png")));
-                }
+//                else if(players.size()==3){
+//                    System.out.println("Gracz 3 nie istnieje");
+////                    tc.p3.setText(message[1]);
+////                    tc.c3.setText(String.valueOf(message[2]));
+////                    tc.circle3.setVisible(true);
+////                    tc.circle3.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+////                    tc.avatar3.setFill(new ImagePattern(new Image("face5.png")));
+//                }
+//                else if(players.size()==4){
+//                    System.out.println("Gracz 3 nie istnieje");
+////                    tc.p4.setText(message[1]);
+////                    tc.c4.setText(String.valueOf(message[2]));
+////                    tc.circle4.setVisible(true);
+////                    tc.circle4.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+////                    tc.avatar4.setFill(new ImagePattern(new Image("face4.jpg")));
+//                }
+//                else if(players.size()==5){
+//                    System.out.println("Gracz 3 nie istnieje");
+////                    tc.p5.setText(message[1]);
+////                    tc.c5.setText(String.valueOf(message[2]));
+////                    tc.circle5.setVisible(true);
+////                    tc.circle5.setFill(new ImagePattern(new Image("blackChip2.jpg")));
+////                    tc.avatar5.setFill(new ImagePattern(new Image("face6.png")));
+//                }
                 break;
 
             case "card":
@@ -237,12 +237,12 @@ public class Client{
 
                 tc.card21.setImage(new Image("download.jpg"));
                 tc.card22.setImage(new Image("download.jpg"));
-                tc.card31.setImage(new Image("download.jpg"));
-                tc.card32.setImage(new Image("download.jpg"));
-                tc.card41.setImage(new Image("download.jpg"));
-                tc.card42.setImage(new Image("download.jpg"));
-                tc.card51.setImage(new Image("download.jpg"));
-                tc.card52.setImage(new Image("download.jpg"));
+//                tc.card31.setImage(new Image("download.jpg"));
+//                tc.card32.setImage(new Image("download.jpg"));
+//                tc.card41.setImage(new Image("download.jpg"));
+//                tc.card42.setImage(new Image("download.jpg"));
+//                tc.card51.setImage(new Image("download.jpg"));
+//                tc.card52.setImage(new Image("download.jpg"));
                 tc.action.setText(" ");
 
                 players = new ArrayList<>();
