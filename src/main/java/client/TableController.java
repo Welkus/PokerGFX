@@ -147,12 +147,11 @@ public class TableController{
 
     public void logout(){
 
-        if(main.client.canLogout){
             main.client.out.println("logout");
+            System.out.println("logout");
             Platform.exit();
             System.exit(0);
         }
 
     }
 
-}

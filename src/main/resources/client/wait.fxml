@@ -37,7 +37,7 @@
             </DropShadow>
          </effect>
       </Button>
-      <Text fill="WHITE" layoutX="134.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gra ma komplet graczy." wrappingWidth="309.4892578125">
+      <Text fill="WHITE" layoutX="134.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gra ma już komplet graczy." wrappingWidth="344.4892578125">
          <font>
             <Font size="28.0" />
          </font>
