@@ -81,7 +81,7 @@ public class Client{
                 players.add(new Player(username,chips));
 
                 openTable();
-                tc.message.setText("Waiting for players...");
+                tc.message.setText("Oczekiwanie na gracza...");
                 break;
 
             case "wait":
@@ -179,7 +179,7 @@ public class Client{
                         if(message[1].equals(username)){
                             isTurn = true;
                         }
-                        tc.whichPturn.setText(message[1]+"'s turn!!");
+                        tc.whichPturn.setText(message[1]+" - teraz Twoja kolej!!");
                     }
                 }
                 break;
@@ -287,28 +287,28 @@ public class Client{
                 }
 
                 if(tc.p2.getText().equals(message[1])) {
-                    tc.p2.setText("Empty");
+                    tc.p2.setText("Brak");
                     tc.c2.setText("-");
                     tc.avatar2.setFill(null);
                     tc.action2.setText(" ");
                 }
                 else if(tc.p3.getText().equals(message[1]))
                 {
-                    tc.p3.setText("Empty");
+                    tc.p3.setText("Brak");
                     tc.c3.setText("-");
                     tc.avatar3.setFill(null);
                     tc.action3.setText(" ");
                 }
                 else if(tc.p4.getText().equals(message[1]))
                 {
-                    tc.p4.setText("Empty");
+                    tc.p4.setText("Brak");
                     tc.c4.setText("-");
                     tc.avatar4.setFill(null);
                     tc.action4.setText(" ");
                 }
                 else if(tc.p5.getText().equals(message[1]))
                 {
-                    tc.p5.setText("Empty");
+                    tc.p5.setText("Brak");
                     tc.c5.setText("-");
                     tc.avatar5.setFill(null);
                     tc.action5.setText(" ");
@@ -335,7 +335,7 @@ public class Client{
             setWaitController(wc);
 
             Main.stage.close();
-            Main.stage.setTitle("WAITING ROOM");
+            Main.stage.setTitle("POCZEKALNIA");
             Main.stage.setScene(new Scene(root));
             Main.stage.show();
         }
