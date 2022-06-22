@@ -35,7 +35,7 @@ public class LoginController {
     public void logIn() {
         if (userName_log.getText() != null && password_log.getText() != null) {
 
-            main.client.out.println("login#" + userName_log.getText() + "#" + password_log.getText());
+            Game.client.out.println("login#" + userName_log.getText() + "#" + password_log.getText());
         }
     }
 
@@ -50,13 +50,13 @@ public class LoginController {
             Parent root = loader.load();
 
             SignupController sc = loader.getController();
-            main.client.setSignUpController(sc);
+            Game.client.setSignUpController(sc);
 
-            main.stage.close();
-            main.stage.setTitle("Online Poker - Zapisz");
-            main.stage.setScene(new Scene(root, 950, 520));
-            main.stage.setResizable(false);
-            main.stage.show();
+            Game.stage.close();
+            Game.stage.setTitle("Online Poker - Zapisz");
+            Game.stage.setScene(new Scene(root, 950, 520));
+            Game.stage.setResizable(false);
+            Game.stage.show();
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -27,7 +27,7 @@ public class SignupController {
     public void signUp() {
         if (userName_sign.getText() != null && password_sign.getText() != null) {
 
-            main.client.out.println("signup#" + userName_sign.getText() + "#" + password_sign.getText());
+            Game.client.out.println("signup#" + userName_sign.getText() + "#" + password_sign.getText());
         }
     }
 

@@ -87,19 +87,19 @@ public class TableController {
         onPlayAudio("click.mp3");
         message.setText(" ");
 
-        if (main.client.isTurn) {
-            if (main.client.currentbet - main.client.selfBet <= main.client.chips) {
-                if (main.client.currentbet != main.client.selfBet) {
+        if (Game.client.isTurn) {
+            if (Game.client.currentbet - Game.client.selfBet <= Game.client.chips) {
+                if (Game.client.currentbet != Game.client.selfBet) {
 
-                    main.client.out.println("call");
-                    main.client.selfBet = main.client.currentbet;
-                    main.client.isTurn = false;
+                    Game.client.out.println("call");
+                    Game.client.selfBet = Game.client.currentbet;
+                    Game.client.isTurn = false;
                 } else message.setText("Nie moższ teraz sprawdzić. Wybierz Podbij lub Pas.");
             } else {
                 message.setText("Musisz rzucić karty!");
 
-                main.client.out.println("fold");
-                main.client.isTurn = false;
+                Game.client.out.println("fold");
+                Game.client.isTurn = false;
             }
         } else message.setText("Teraz nie możesz tego zrobić!");
     }
@@ -113,10 +113,10 @@ public class TableController {
         onPlayAudio("click.mp3");
         message.setText(" ");
 
-        if (main.client.isTurn) {
-            if (main.client.currentbet == main.client.selfBet) {
-                main.client.out.println("check");
-                main.client.isTurn = false;
+        if (Game.client.isTurn) {
+            if (Game.client.currentbet == Game.client.selfBet) {
+                Game.client.out.println("check");
+                Game.client.isTurn = false;
             } else message.setText("Musisz sprawdzić aktualny zakład!");
         } else message.setText("Teraz nie możesz tego zrobić!");
     }
@@ -130,16 +130,16 @@ public class TableController {
         message.setText(" ");
 
         try {
-            if (main.client.isTurn) {
+            if (Game.client.isTurn) {
 
-                if (Integer.parseInt(raisebox.getText()) - main.client.selfBet <= main.client.chips) {
+                if (Integer.parseInt(raisebox.getText()) - Game.client.selfBet <= Game.client.chips) {
 
-                    if (Integer.parseInt(raisebox.getText()) > main.client.currentbet) {
+                    if (Integer.parseInt(raisebox.getText()) > Game.client.currentbet) {
 
-                        main.client.out.println("raise#" + raisebox.getText());
-                        main.client.selfBet = Integer.parseInt(raisebox.getText());
+                        Game.client.out.println("raise#" + raisebox.getText());
+                        Game.client.selfBet = Integer.parseInt(raisebox.getText());
                         raisebox.clear();
-                        main.client.isTurn = false;
+                        Game.client.isTurn = false;
                     } else message.setText("Nie możesz postawić mniej, niż aktualna wartość zakładu.");
                 } else message.setText("Za mało chipów!");
             } else message.setText("Teraz nie możesz tego zrobić");
@@ -157,9 +157,9 @@ public class TableController {
         onPlayAudio("click.mp3");
         message.setText(" ");
 
-        if (main.client.isTurn) {
-            main.client.out.println("fold");
-            main.client.isTurn = false;
+        if (Game.client.isTurn) {
+            Game.client.out.println("fold");
+            Game.client.isTurn = false;
         }
     }
 
@@ -169,7 +169,7 @@ public class TableController {
      */
     public void logout() {
         onPlayAudio("click.mp3");
-        main.client.out.println("logout");
+        Game.client.out.println("logout");
         System.out.println("logout");
         Platform.exit();
         System.exit(0);

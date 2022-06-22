@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 
-import javax.sound.sampled.AudioSystem;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -269,10 +268,10 @@ public class Client{
             WaitController wc = loader.getController();
             setWaitController(wc);
 
-            main.stage.close();
-            main.stage.setTitle("POCZEKALNIA");
-            main.stage.setScene(new Scene(root));
-            main.stage.show();
+            Game.stage.close();
+            Game.stage.setTitle("POCZEKALNIA");
+            Game.stage.setScene(new Scene(root));
+            Game.stage.show();
         }
         catch (IOException e){
             e.printStackTrace();
@@ -294,10 +293,10 @@ public class Client{
             TableController tc = loader.getController();
             setTableController(tc);
 
-            main.stage.close();
-            main.stage.setTitle("Rozgrywka");
-            main.stage.setScene(new Scene(root));
-            main.stage.show();
+            Game.stage.close();
+            Game.stage.setTitle("Rozgrywka");
+            Game.stage.setScene(new Scene(root));
+            Game.stage.show();
 
 
             tc.p1.setText(username);
