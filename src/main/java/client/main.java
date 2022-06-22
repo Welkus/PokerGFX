@@ -11,10 +11,16 @@ public class main extends Application {
     public static Stage stage;
     public static Client client;
 
+
+    /**
+     * Klasa main - metoda start aplikacja okienkowa(javafx)
+     * @param primaryStage Stage
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
 
         client = new Client();
+
 
         this.stage = primaryStage;
         FXMLLoader loader = new FXMLLoader(getClass().getResource("loginScreen.fxml"));
@@ -26,9 +32,11 @@ public class main extends Application {
         stage.setResizable(false);
         stage.setScene(new Scene(root, 1000, 320));
         stage.show();
+
     }
 
     public static void main(String[] args) {
         launch(args);
     }
+
 }

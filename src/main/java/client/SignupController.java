@@ -9,6 +9,9 @@ import javafx.scene.media.MediaView;
 
 import java.net.URISyntaxException;
 
+/**
+ * Klasa kontrolera zapisu nowego gracza
+ */
 public class SignupController {
 
     @FXML
@@ -18,6 +21,9 @@ public class SignupController {
     @FXML
     private MediaView mediaView;
 
+    /**
+     * metoda zapisz
+     */
     public void signUp() {
         if (userName_sign.getText() != null && password_sign.getText() != null) {
 
