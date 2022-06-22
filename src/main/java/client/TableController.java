@@ -94,14 +94,14 @@ public class TableController {
                     main.client.out.println("call");
                     main.client.selfBet = main.client.currentbet;
                     main.client.isTurn = false;
-                } else message.setText("Nie moższ teraz sprawdzić. Wybierz Podbij lub Rzucam.");
+                } else message.setText("Nie moższ teraz sprawdzić. Wybierz Podbij lub Pas.");
             } else {
                 message.setText("Musisz rzucić karty!");
 
                 main.client.out.println("fold");
                 main.client.isTurn = false;
             }
-        } else message.setText("Nie Twoja kolej!");
+        } else message.setText("Teraz nie możesz tego zrobić!");
     }
 
     /**
@@ -118,7 +118,7 @@ public class TableController {
                 main.client.out.println("check");
                 main.client.isTurn = false;
             } else message.setText("Musisz sprawdzić aktualny zakład!");
-        } else message.setText("Nie Twoja kolej!");
+        } else message.setText("Teraz nie możesz tego zrobić!");
     }
 
     /**
@@ -142,7 +142,7 @@ public class TableController {
                         main.client.isTurn = false;
                     } else message.setText("Nie możesz postawić mniej, niż aktualna wartość zakładu.");
                 } else message.setText("Za mało chipów!");
-            } else message.setText("Nie Twoja kolej!");
+            } else message.setText("Teraz nie możesz tego zrobić");
 
         } catch (NumberFormatException e) {
             message.setText("Należy wprowadzić liczby");

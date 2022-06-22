@@ -55,6 +55,7 @@ public class LoginController {
             main.stage.close();
             main.stage.setTitle("Online Poker - Zapisz");
             main.stage.setScene(new Scene(root, 950, 520));
+            main.stage.setResizable(false);
             main.stage.show();
 
         } catch (IOException e) {
@@ -73,7 +74,6 @@ public class LoginController {
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
-
         }
         mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
         mediaView.getMediaPlayer().play();

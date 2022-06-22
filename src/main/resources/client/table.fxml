@@ -26,12 +26,12 @@
    <children>
       <ImageView fitHeight="870.0" fitWidth="1266.0" layoutX="-8.0" layoutY="-5.0" pickOnBounds="true">
          <image>
-            <Image url="@mainbg.jpg" />
+            <Image url="@../mainbg.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="124.0" fitWidth="180.0" layoutX="531.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dealer6.png" />
+            <Image url="@../dealer6.png" />
          </image>
          <effect>
             <DropShadow />
@@ -39,12 +39,12 @@
       </ImageView>
       <ImageView fitHeight="523.0" fitWidth="907.0" layoutX="168.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Table.png" />
+            <Image url="@../Table.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="134.0" fitWidth="167.0" layoutX="537.0" layoutY="36.0" opacity="0.56" pickOnBounds="true">
          <image>
-            <Image url="@spbubble.png" />
+            <Image url="@../spbubble.png" />
          </image>
          <effect>
             <DropShadow height="41.53" offsetX="5.0" offsetY="5.0" radius="22.46" spread="0.77" width="50.31">
@@ -60,28 +60,28 @@
                <children>
                   <ImageView fx:id="cc1" fitHeight="132.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image></ImageView>
                </children></VBox>
             <VBox fx:id="v2" prefHeight="75.0" prefWidth="83.0">
                <children>
                   <ImageView fx:id="cc2" fitHeight="132.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image></ImageView>
                </children></VBox>
             <VBox fx:id="v3" prefHeight="146.0" prefWidth="145.0">
                <children>
                   <ImageView fx:id="cc3" fitHeight="133.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image></ImageView>
                </children></VBox>
             <VBox fx:id="v4" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <ImageView fx:id="cc4" fitHeight="134.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image></ImageView>
                </children>
             </VBox>
@@ -89,7 +89,7 @@
                <children>
                   <ImageView fx:id="cc5" fitHeight="133.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image></ImageView>
                </children></VBox>
          </children>
@@ -182,7 +182,7 @@
                <children>
                   <ImageView fx:id="card1" fitHeight="90.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image>
                   </ImageView>
                </children></VBox>
@@ -190,7 +190,7 @@
                <children>
                   <ImageView fx:id="card2" fitHeight="90.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image>
                   </ImageView>
                </children></VBox>
@@ -202,7 +202,7 @@
                <children>
                   <ImageView fx:id="card21" fitHeight="90.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -211,7 +211,7 @@
                <children>
                   <ImageView fx:id="card22" fitHeight="90.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@download.jpg" />
+                        <Image url="@../download.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -246,7 +246,7 @@
       </Button>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="989.0" layoutY="23.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@th.jpg" />
+            <Image url="@../th.jpg" />
          </image>
       </ImageView>
       <Text fx:id="chipID" fill="#f5a957" layoutX="1001.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PULA">
@@ -324,7 +324,7 @@
             </Circle>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@cashbag.png" />
+                  <Image url="@../cashbag.png" />
                </image>
                <effect>
                   <DropShadow />
@@ -348,7 +348,7 @@
             <DropShadow />
          </effect>
       </TextField>
-      <Text fx:id="action" fill="#402c0fad" layoutX="551.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
+      <Text fx:id="action" fill="#402c0fad" layoutX="556.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -375,7 +375,7 @@
             </Circle>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@cashbag.png" />
+                  <Image url="@../cashbag.png" />
                </image>
                <effect>
                   <DropShadow />
