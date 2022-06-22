@@ -2,6 +2,7 @@ package client;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
@@ -14,17 +15,18 @@ import javafx.scene.text.Text;
 public class TableController {
 
     @FXML
-    public TextField p1;
+    public Label p1;
     @FXML
-    public TextField p2;
+    public Label p2;
     @FXML
-    public TextField c1;
+    public Label c1;
     @FXML
-    public TextField c2;
+    public Label c2;
     @FXML
     private TextField raisebox;
     @FXML
     public TextField whichPturn;
+
 
     @FXML
     public ImageView cc1;
