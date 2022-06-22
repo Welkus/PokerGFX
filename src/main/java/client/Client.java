@@ -123,7 +123,7 @@ public class Client{
                 tc.card2.setImage(new Image("" + message[2] + ".png"));
                 break;
 
-            case "chips":
+            case "tokens":
                 for(int i=0; i<players.size(); i++){
 
                     if(message[1].equals(players.get(i).username)){

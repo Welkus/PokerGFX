@@ -26,8 +26,7 @@ public class main extends Application {
 
         LoginController lc = loader.getController();
         client.setLogInController(lc);
-
-        stage.setTitle("Online Poker - Zaloguj");
+      stage.setTitle("Online Poker - Zaloguj");
         stage.setScene(new Scene(root, 1000, 320));
         stage.show();
 
