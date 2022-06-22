@@ -20,7 +20,6 @@ import java.net.URISyntaxException;
  */
 public class LoginController {
 
-
     @FXML
     private TextField userName_log;
     @FXML
@@ -28,10 +27,6 @@ public class LoginController {
     @FXML
     private MediaView mediaView;
 
-
-    /**
-     * Logowanie do aplikacji
-     */
     public void logIn() {
         if (userName_log.getText() != null && password_log.getText() != null) {
 
@@ -39,10 +34,6 @@ public class LoginController {
         }
     }
 
-    /**
-     * metoda pozawalająca na utworzenie konta użytkownika
-     * przygotowanie sceny dla formatki rejestracji gracza
-     */
     public void createAccount() {
         onPlayAudio();
         try {

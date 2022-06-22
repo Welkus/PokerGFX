@@ -9,8 +9,8 @@ public class Player {
     public int chips;
 
     /**
-     * @param username
-     * @param chips
+     * @param username String
+     * @param chips Int
      */
     public Player(String username, int chips) {
         this.username = username;

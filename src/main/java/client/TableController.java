@@ -13,11 +13,6 @@ import javafx.scene.text.Text;
 
 import java.net.URISyntaxException;
 
-/**
- * Klasa kontrolera gry
- *
- * @author K.Woelke
- */
 public class TableController {
 
     @FXML
@@ -32,7 +27,6 @@ public class TableController {
     private TextField raisebox;
     @FXML
     public TextField whichPturn;
-
 
     @FXML
     public ImageView cc1;
@@ -78,11 +72,6 @@ public class TableController {
     @FXML
     private MediaView mediaView;
 
-    /**
-     * metoda (call) pozwalająca graczowi na sprawdzenie
-     * podbicia po jednym zakładzie i jednym lub kilku podbiciach
-     * wywołana, wysyła do serwera String "call"
-     */
     public void call() {
         onPlayAudio("click.mp3");
         message.setText(" ");
@@ -104,11 +93,6 @@ public class TableController {
         } else message.setText("Teraz nie możesz tego zrobić!");
     }
 
-    /**
-     * metoda (check) "czekam" - przekazanie ruchu do drugiego gracza
-     * bez wnoszenia zakładu.
-     * wywołana wysyła do serwera String "check"
-     */
     public void check() {
         onPlayAudio("click.mp3");
         message.setText(" ");
@@ -121,10 +105,6 @@ public class TableController {
         } else message.setText("Teraz nie możesz tego zrobić!");
     }
 
-    /**
-     * metoda podbijam (raise), podbicie zakładu
-     * wywołana wysyła do serwera String "raise"
-     */
     public void raise() {
         onPlayAudio("click.mp3");
         message.setText(" ");
@@ -149,10 +129,6 @@ public class TableController {
         }
     }
 
-    /**
-     * metoda fold (pasowanie kart, rezygnacja z danego rozdania)
-     * wywołana wysyła do serwera String "fold"
-     */
     public void fold() {
         onPlayAudio("click.mp3");
         message.setText(" ");
@@ -163,10 +139,7 @@ public class TableController {
         }
     }
 
-    /**
-     * metoda pozwalająca na opuszczenie gry.
-     * wywołana, wysyła do serwera String "logout"
-     */
+
     public void logout() {
         onPlayAudio("click.mp3");
         main.client.out.println("logout");
