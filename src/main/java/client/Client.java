@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 
+import javax.sound.sampled.AudioSystem;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -41,6 +42,8 @@ public class Client{
     private TableController tc;
     private WaitController wc;
     public List<Player> players;
+
+
 
     Client(){
         isLoggedIn = false;
@@ -300,6 +303,7 @@ public class Client{
             main.stage.setTitle("Rozgrywka");
             main.stage.setScene(new Scene(root));
             main.stage.show();
+
 
             tc.p1.setText(username);
             tc.c1.setText(String.valueOf(chips));

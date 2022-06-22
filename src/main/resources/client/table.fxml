@@ -16,6 +16,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
@@ -390,5 +391,6 @@
             </Label>
          </children>
       </VBox>
+      <MediaView fx:id="mediaView" fitHeight="10.0" fitWidth="10.0" layoutX="1200.0" layoutY="18.0" />
    </children>
 </AnchorPane>

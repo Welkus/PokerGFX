@@ -5,11 +5,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 
+import java.net.URISyntaxException;
+
 /**
  * Klasa kontrolera gry
+ *
  * @author K.Woelke
  */
 public class TableController {
@@ -69,6 +75,8 @@ public class TableController {
     public Circle pot6;
     public Circle avatar1;
     public Circle avatar2;
+    @FXML
+    private MediaView mediaView;
 
     /**
      * metoda (call) pozwalająca graczowi na sprawdzenie
@@ -76,7 +84,7 @@ public class TableController {
      * wywołana, wysyła do serwera String "call"
      */
     public void call() {
-
+        onPlayAudio("click.mp3");
         message.setText(" ");
 
         if (main.client.isTurn) {
@@ -102,7 +110,7 @@ public class TableController {
      * wywołana wysyła do serwera String "check"
      */
     public void check() {
-
+        onPlayAudio("click.mp3");
         message.setText(" ");
 
         if (main.client.isTurn) {
@@ -118,7 +126,7 @@ public class TableController {
      * wywołana wysyła do serwera String "raise"
      */
     public void raise() {
-
+        onPlayAudio("click.mp3");
         message.setText(" ");
 
         try {
@@ -146,7 +154,7 @@ public class TableController {
      * wywołana wysyła do serwera String "fold"
      */
     public void fold() {
-
+        onPlayAudio("click.mp3");
         message.setText(" ");
 
         if (main.client.isTurn) {
@@ -160,12 +168,27 @@ public class TableController {
      * wywołana, wysyła do serwera String "logout"
      */
     public void logout() {
-
+        onPlayAudio("click.mp3");
         main.client.out.println("logout");
         System.out.println("logout");
         Platform.exit();
         System.exit(0);
     }
 
+    public void onPlayAudio(String file) {
+        if (mediaView.getMediaPlayer() == null) {
+            try {
+                String fileName = getClass().getResource(file).toURI().toString();
+                Media media = new Media(fileName);
+                MediaPlayer player = new MediaPlayer(media);
+                mediaView.setMediaPlayer(player);
+
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        }
+        mediaView.getMediaPlayer().seek(mediaView.getMediaPlayer().getStartTime());
+        mediaView.getMediaPlayer().play();
+    }
 }
 
