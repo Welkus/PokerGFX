@@ -6,37 +6,32 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Klasa Game - metoda start aplikacja okienkowa(javafx)
+ * @author K.Woelke
+ */
+
 public class Game extends Application {
 
     public static Stage stage;
     public static Client client;
 
-
-    /**
-     * Klasa main - metoda start aplikacja okienkowa(javafx)
-     * @param primaryStage Stage
-     */
     @Override
     public void start(Stage primaryStage) throws Exception {
 
         client = new Client();
-
-
-        this.stage = primaryStage;
+        stage = primaryStage;
         FXMLLoader loader = new FXMLLoader(getClass().getResource("loginScreen.fxml"));
         Parent root = loader.load();
-
         LoginController lc = loader.getController();
         client.setLogInController(lc);
         stage.setTitle("Online Poker - Zaloguj");
         stage.setResizable(false);
         stage.setScene(new Scene(root, 1000, 320));
         stage.show();
-
     }
 
     public static void main(String[] args) {
         launch(args);
     }
-
 }
