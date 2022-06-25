@@ -348,7 +348,7 @@
             <DropShadow />
          </effect>
       </TextField>
-      <Text fx:id="action" fill="#402c0fad" layoutX="556.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
+      <Text fx:id="action" fill="#402c0fad" layoutX="577.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" textOrigin="CENTER" wrappingWidth="110.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
